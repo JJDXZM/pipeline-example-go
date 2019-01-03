@@ -17,7 +17,7 @@ stages:
       dockerfilePath: ./Dockerfile
       tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
-      registry: 114.67.234.157
+      registry: harborregistry.com
 - name: Deploy
   steps:
   - applyYamlConfig:
