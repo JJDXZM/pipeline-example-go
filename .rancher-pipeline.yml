@@ -16,6 +16,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
       registry: 127.0.0.1:34642
 - name: Deploy
   steps:
